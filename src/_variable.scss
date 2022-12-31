@@ -1,0 +1,60 @@
+// scss variable
+// scss 변수들을 이곳에 작성하고 사용합니다.
+// color
+$black: #000000;
+$black-900: #212121;
+$black-800: #2a2a2a;
+$black-700: #555555;
+$black-650: #616161;
+$black-600: #777777;
+$black-500: #949494;
+$black-400: #b7b7b7;
+$black-300: #dfdfdf;
+$black-200: #efefef;
+$black-100: #fcfcfc;
+$white: #ffffff;
+$red: #da1e28;
+$blue: #304ffe;
+$blue-400: #3d5afe;
+$blue-200: #536dfe;
+$blue-100: #8c9eff;
+$small-shadow: 0px 6px 8px -6px rgba(24, 39, 75, 0.12);
+// layout
+$pc-view: 1380px;
+$tablet-view: 1024px;
+$mobile-view: 768px;
+// layout
+$layout-width-web: 1300px;
+$layout-width-tablet: 768px;
+$layout-width-mobile: 360px;
+// font-size
+$font-x-small: 14px;
+$font-small: 16px;
+$font-medium: 18px;
+$font-large: 24px;
+$font-x-large: 32px;
+
+// mixin
+@mixin MaxPc() {
+  @media screen and (min-width: $pc-view) {
+    @content;
+  }
+}
+
+@mixin MiniPc() {
+  @media screen and (max-width: $pc-view) {
+    @content;
+  }
+}
+
+@mixin Tablet() {
+  @media screen and (max-width: $tablet-view) {
+    @content;
+  }
+}
+
+@mixin Mobile() {
+  @media screen and (max-width: $mobile-view) {
+    @content;
+  }
+}

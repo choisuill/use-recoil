@@ -1,0 +1,35 @@
+@import '../../variable';
+
+.wrapper {
+  width: 100%;
+  display: flex;
+
+  & > div {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    width: 100%;
+
+    .fake {
+      height: 100%;
+      width: 280px;
+      left: 280px;
+    }
+    main {
+      box-sizing: border-box;
+      padding: 60px 24px;
+    }
+  }
+
+  @include MaxPc() {
+  }
+
+  @include MiniPc() {
+  }
+
+  @include Tablet() {
+  }
+
+  @include Mobile() {
+  }
+}

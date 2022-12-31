@@ -1,8 +1,8 @@
 import { atom } from 'recoil';
 
-const sidenavState = atom({
-  key: 'sidenavState',
+const sidenav = atom({
+  key: 'sidenav',
   default: true,
 });
 
-export default sidenavState;
+export default sidenav;

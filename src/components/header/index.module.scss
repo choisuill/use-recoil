@@ -1,0 +1,67 @@
+@import '../../variable';
+
+.wrapper {
+  position: fixed;
+  border-bottom: 1px solid $black-400;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 120px;
+  width: 100%;
+  height: 60px;
+  padding: 8px 24px;
+  box-sizing: border-box;
+
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+
+    nav {
+      display: flex;
+      white-space: nowrap;
+      gap: 12px;
+
+      a {
+        font-family: 'Pretendard';
+        font-size: $font-x-small;
+        font-weight: 400;
+        color: $black-900;
+        text-decoration: none;
+        box-sizing: border-box;
+        padding: 12px;
+      }
+    }
+  }
+
+  svg {
+    cursor: pointer;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  @include MiniPc() {
+  }
+
+  @include Tablet() {
+  }
+
+  @include Mobile() {
+    padding: 6px 16px;
+    gap: 40px;
+    .nav-wrapper {
+      nav {
+        gap: 8px;
+      }
+    }
+  }
+}
+
+.fake {
+  left: 280px;
+  width: calc(100% - 280px);
+}

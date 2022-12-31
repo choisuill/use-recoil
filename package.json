@@ -14,6 +14,7 @@
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-query": "^3.39.2",
     "react-router-dom": "^6.4.4",
     "react-scripts": "5.0.1",
     "recoil": "^0.7.6",
@@ -21,9 +22,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test",
     "lint": "eslint ./src",
     "lint:fix": "eslint --fix ./src",
     "prettier": "prettier --write --config ./.prettierrc './src/**/*.{ts,tsx}'",
@@ -50,6 +51,8 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
+    "craco": "^0.0.3",
+    "craco-alias": "^3.0.1",
     "eslint": "^8.29.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",

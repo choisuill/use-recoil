@@ -3,3 +3,4 @@ src/reportWebVitals.ts
 src/setupTests.ts
 src/*.test.tsx
 src/*.test.ts
+craco.config.js

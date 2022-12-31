@@ -1,0 +1,45 @@
+@import '../../variable';
+
+.wrapper {
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 1;
+  width: 280px;
+  min-width: 280px;
+  border-right: 1px solid $black-400;
+  height: 100%;
+  min-height: 100vh;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    height: 60px;
+  }
+
+  nav {
+    display: flex;
+    padding: 24px 18px;
+    box-sizing: border-box;
+    flex-direction: column;
+
+    a {
+      box-sizing: border-box;
+      padding: 12px 4px;
+      text-decoration: none;
+      font-family: 'Pretendard';
+      font-size: $font-medium;
+      color: $black-800;
+    }
+  }
+
+  @include MiniPc() {
+  }
+
+  @include Tablet() {
+  }
+
+  @include Mobile() {
+  }
+}

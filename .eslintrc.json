@@ -24,6 +24,9 @@
   "rules": {
     "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", "tsx"] }],
+    "react/react-in-jsx-scope": "off",
+    "no-plusplus": "off",
+    "no-continue": "off",
     "arrow-body-style": "off"
   }
 }
